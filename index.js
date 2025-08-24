@@ -1,7 +1,7 @@
 const add = document.querySelector(".add");
 add.addEventListener("click", inputPopUp);
 const input = document.querySelector(".input");
-  input.style.display = "none";
+input.style.display = "none";
 function inputPopUp() {
   const input = document.querySelector(".input");
   input.style.display = "block";
@@ -9,11 +9,12 @@ function inputPopUp() {
   // input.style.backgroundColor="blue"
   input.addEventListener("input", () => {
     console.log(input.value);
-    input.addEventListener("keydown", (e)=>{
-      if(e.key==="Enter"){
-        alert(`Welcome ${ input.value}`)
+    input.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        alert(`Welcome ${input.value}`);
       }
-    })
+      input.style.display = "none";
+    });
   });
 }
 const darkmode = document.querySelector(".darkmode");
