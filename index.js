@@ -1,8 +1,21 @@
 const add = document.querySelector(".add");
-add.addEventListener("click", function () {
-  alert("hello goodluck");
-});
-
+add.addEventListener("click", inputPopUp);
+const input = document.querySelector(".input");
+  input.style.display = "none";
+function inputPopUp() {
+  const input = document.querySelector(".input");
+  input.style.display = "block";
+  input.style.textalign = "center";
+  // input.style.backgroundColor="blue"
+  input.addEventListener("input", () => {
+    console.log(input.value);
+    input.addEventListener("keydown", (e)=>{
+      if(e.key==="Enter"){
+        alert(`Welcome ${ input.value}`)
+      }
+    })
+  });
+}
 const darkmode = document.querySelector(".darkmode");
 const lightmode = document.querySelector(".lightmode");
 
@@ -25,14 +38,13 @@ lightmode.addEventListener("click", () => {
   }, 2000);
 });
 
-
- function openLightbox(src, caption) {
-    document.getElementById("lightbox-img").src = src;
-    document.getElementById("lightbox-caption").innerText = caption;
-    document.getElementById("lightbox").classList.remove("hidden");
-    document.getElementById("lightbox").classList.add("flex");
-  }
-  function closeLightbox() {
-    document.getElementById("lightbox").classList.remove("flex");
-    document.getElementById("lightbox").classList.add("hidden");
-  }
+function openLightbox(src, caption) {
+  document.getElementById("lightbox-img").src = src;
+  document.getElementById("lightbox-caption").innerText = caption;
+  document.getElementById("lightbox").classList.remove("hidden");
+  document.getElementById("lightbox").classList.add("flex");
+}
+function closeLightbox() {
+  document.getElementById("lightbox").classList.remove("flex");
+  document.getElementById("lightbox").classList.add("hidden");
+}
