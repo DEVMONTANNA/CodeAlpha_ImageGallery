@@ -13,10 +13,10 @@ function inputPopUp() {
       if (e.key === "Enter") {
         alert(`Welcome ${input.value}`);
       }
-      input.style.display = "none";
     });
   });
 }
+input.style.display = "none";
 const darkmode = document.querySelector(".darkmode");
 const lightmode = document.querySelector(".lightmode");
 
