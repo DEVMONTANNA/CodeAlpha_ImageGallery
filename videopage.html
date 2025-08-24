@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/brands.min.css"
+      integrity="sha512-mXqwRsOznG7CS37KA7CLR1Fc72gfOgp7r8xaVdBKoBKhitcKI/mK+IamtZUf+FAkufXOvVTESu9lPsoQc+kFxg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/fontawesome.min.css"
+      integrity="sha512-J2Gce+WmOttffHOrVKLTlzxIalPXUMDbSfn5ADqp8Vj9EngnjNHr+jjiL3ZB8muEzo+K51gU10X+0eGqGNL7QA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+      <div class="p-[10px] flex justify-between w-[100%] items-center">
+      <button class="text-[blue] text-[25px]">
+        <i class="fa-solid fa-plus add"></i>
+      </button>
+      <i class="fa-solid fa-moon text-[22px] darkmode"></i>
+      <i style="display: none" class="fa-solid fa-sun lightmode"></i>
+    </div>
+    <section class="mobilevideosection">
+      <div class="p-[20px]">
+        <b> <h1 class="text-[21px]">Videos</h1></b>
+      </div>
+      <div
+        class="flex w-full videodisplay bg-red justify-between items-center gap-2 p-[30px]"
+      >
+        <video
+          class="w-[100%] h-auto block min-h-[200px] video"
+          controls
+          autoplay
+          muted
+          src="cardvideo.mp4"
+        ></video>
+        <video
+          class="w-[100%] h-auto block min-h-[200px] video"
+          controls
+          autoplay
+          muted
+          src="cardvideo.mp4"
+        ></video>
+        <video
+          class="w-[100%] h-auto min-h-[200px] block video"
+          controls
+          autoplay
+          muted
+          src="cardvideo.mp4"
+        ></video>
+        <video
+          class="w-[100%] h-auto block min-h-[200px] video"
+          controls
+          autoplay
+          muted
+          src="cardvideo.mp4"
+        ></video>
+        <video
+          class="w-[100%] h-auto block min-h-[200px] video"
+          controls
+          autoplay
+          muted
+          src="cardvideo.mp4"
+        ></video>
+      </div>
+    </section>
+
+    <section class="dektopvideosection">
+      <div class="p-[20px]">
+        <b> <h1 class="text-[21px]">Videos</h1></b>
+      </div>
+      <div class="bg-red-500 grid grid-cols-4 grid-rows-3 gap-[5px] w-full justify-between items-center p-[20px]">
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+        <video class="h-[200px] w-[300px]" controls autoplay muted src="cardvideo.mp4"></video>
+      </div>
+    </section>
+
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- <video width="300" height="200" controls autoplay muted loop src="cardvideo.mp4"></video> -->

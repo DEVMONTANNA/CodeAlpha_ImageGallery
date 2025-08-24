@@ -1,0 +1,43 @@
+@media (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  .videodisplay {
+    display: block;
+    justify-content: space-between;
+    justify-items: center;
+    margin-left: px;
+    /* background-color: red; */
+  }
+  .video {
+    /* width: 35%; */
+    height: 200px;
+  }
+  .dektopvideosection {
+    display: none !important;
+  }
+}
+.videp {
+  width: 30%;
+}
+@media screen and (min-width: 601px) {
+  .dektopvideosection {
+    display: block;
+  }
+  .mobilevideosection {
+    display: none;
+  }
+  .mobile {
+    display: none;
+  }
+  .mobile2 {
+    display: none;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
