@@ -35,7 +35,7 @@ function inputPopUp() {
       "keydown",
       (e) => {
         if (e.key === "Enter") {
-          alert(`Welcome ${input.value}`);
+          alert(`Welcome ${input.value} nice to see you visit my gallery, feel at home and explore vastly`);
           input.style.display = "none";
           input.value = "";
         }
