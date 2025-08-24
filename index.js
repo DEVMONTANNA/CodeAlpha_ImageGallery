@@ -1,22 +1,3 @@
-const add = document.querySelector(".add");
-add.addEventListener("click", inputPopUp);
-const input = document.querySelector(".input");
-input.style.display = "none";
-function inputPopUp() {
-  const input = document.querySelector(".input");
-  input.style.display = "block";
-  input.style.textalign = "center";
-  // input.style.backgroundColor="blue"
-  input.addEventListener("input", () => {
-    console.log(input.value);
-    input.addEventListener("keydown", (e) => {
-      if (e.key === "Enter") {
-        alert(`Welcome ${input.value}`);
-      }
-    });
-  });
-}
-input.style.display = "none";
 const darkmode = document.querySelector(".darkmode");
 const lightmode = document.querySelector(".lightmode");
 
@@ -38,6 +19,31 @@ lightmode.addEventListener("click", () => {
     darkmode.style.display = "inline-block";
   }, 2000);
 });
+
+const add = document.querySelector(".add");
+add.addEventListener("click", inputPopUp);
+const input = document.querySelector(".input");
+input.style.display = "none";
+function inputPopUp() {
+  const input = document.querySelector(".input");
+  input.style.display = "block";
+  input.style.textalign = "center";
+  // input.style.backgroundColor="blue"
+  input.addEventListener("input", () => {
+    console.log(input.value);
+    input.addEventListener(
+      "keydown",
+      (e) => {
+        if (e.key === "Enter") {
+          alert(`Welcome ${input.value}`);
+          input.style.display = "none";
+          input.value = "";
+        }
+      },
+      { once: true }
+    );
+  });
+}
 
 function openLightbox(src, caption) {
   document.getElementById("lightbox-img").src = src;
