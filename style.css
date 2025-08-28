@@ -1,4 +1,4 @@
-.input{
+.input {
   display: none;
 }
 @media (max-width: 600px) {
@@ -39,8 +39,15 @@
   .mobile2 {
     display: none;
   }
+
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+
+.largescreen{
+  background-color: orange;
+  display: none;
 }

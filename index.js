@@ -35,7 +35,9 @@ function inputPopUp() {
       "keydown",
       (e) => {
         if (e.key === "Enter") {
-          alert(`Welcome ${input.value} nice to see you visit my gallery, feel at home and explore vastly`);
+          alert(
+            `Welcome ${input.value} nice to see you visit my gallery, feel at home and explore vastly`
+          );
           input.style.display = "none";
           input.value = "";
         }
@@ -44,6 +46,18 @@ function inputPopUp() {
     );
   });
 }
+
+//  const videos =[
+//        "cardvideo.mp4",
+//        "cardvideo.mp4",
+//        "cardvideo.mp4",
+//        "cardvideo.mp4",
+//        "cardvideo.mp4"
+//       ]
+
+//       console.log(videos[1]);
+// const vido = document.querySelector(".vvvv");
+// vido.innerHTML=`<div style="padding:20px; background:red;"><video style="width:100%;" controls muted loop src="${videos[1]}"></video></div>`
 
 function openLightbox(src, caption) {
   document.getElementById("lightbox-img").src = src;
@@ -55,3 +69,7 @@ function closeLightbox() {
   document.getElementById("lightbox").classList.remove("flex");
   document.getElementById("lightbox").classList.add("hidden");
 }
+
+
+
+    

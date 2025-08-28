@@ -27,6 +27,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -37,7 +38,12 @@
       <button class="text-[blue] text-[25px]">
         <i class="fa-solid fa-plus add"></i>
       </button>
-            <input placeholder="Please enter your name" value="" type="text" class="flex text-center p-[10px] input border border-[2px solid white]" />
+      <input
+        placeholder="Please enter your name"
+        value=""
+        type="text"
+        class="flex text-center p-[10px] input border border-[2px solid white]"
+      />
 
       <i class="fa-solid fa-moon text-[22px] darkmode"></i>
       <i style="display: none" class="fa-solid fa-sun lightmode"></i>
@@ -324,21 +330,27 @@
         <b><h1 class="text-[21px]">Media types</h1></b>
       </div>
       <div class="grid grid-flow-row gap-y-[20px] p-[20px]">
-       <a href="videopage.html" class="flex justify-between items-center w-full"> <div class="flex justify-between items-center w-full">
-          <div class="flex justify-between items-center">
-            <i class="text-[blue] text-[25px] fas fa-video"></i>
-            <p class="ml-[10px]">Videos</p>
+        <a
+          href="videopage.html"
+          class="flex justify-between items-center w-full"
+        >
+          <div class="flex justify-between items-center w-full">
+            <div class="flex justify-between items-center">
+              <i class="text-[blue] text-[25px] fas fa-video"></i>
+              <p class="ml-[10px]">Videos</p>
+            </div>
+            <p>5</p>
           </div>
-          <p>100</p>
-        </div>
-      </a>
-        <div class="flex justify-between items-center w-full">
-          <div class="flex justify-between items-center">
-            <i class="text-[blue] text-[25px] fas fa-camera"></i>
-            <p class="ml-[10px]">Selfies</p>
+        </a>
+        <a href="selfie.html" class="flex justify-between items-center w-full">
+          <div class="flex justify-between items-center w-full">
+            <div class="flex justify-between items-center">
+              <i class="text-[blue] text-[25px] fas fa-camera"></i>
+              <p class="ml-[10px]">Selfies</p>
+            </div>
+            <p class="selfiename">22</p>
           </div>
-          <p>151</p>
-        </div>
+        </a>
         <div class="flex justify-between items-center w-full">
           <div class="flex justify-between items-center">
             <i class="text-[blue] text-[25px] fas fa-user"></i>
@@ -398,7 +410,9 @@
         <p id="lightbox-caption" class="mt-3 text-black font-semibold"></p>
       </div>
     </div>
+    <!-- <div class="vvvv"></div> -->
 
-    <script defer src="index.js"></script>
+    <script src="index.js"></script>
+    <script src="index2.js"></script>
   </body>
 </html>
