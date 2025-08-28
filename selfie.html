@@ -34,9 +34,11 @@
     />
   </head>
   <body>
-    <section class="smallscreen">
-      <b> <h1 class="text-[21px] selfiename">Selfies</h1></b>
-      <div class="imageshow"></div>
+    <section class="smallscreen flex justify-center items-center w-[100%]">
+      <div>
+        <b> <h1 class="text-[21px] selfiename">Selfies</h1></b>
+        <div class="imageshow w-[100%]"></div>
+      </div>
     </section>
 
     <script>
@@ -68,16 +70,16 @@
       selfieDisplayer.innerHTML = selfies
         .map(
           (url) => `
-          <img
+        <img
             src="${url}"
             alt="selfie"
-            style="width:100px; margin:10px; border-radius:10px;"
+            style="width:115px; margin:10px; margin-right:1px; border-radius:10px;"
           />`
         )
         .join("");
-    //   const selfiename = document.querySelector(".selfiename");
+      //   const selfiename = document.querySelector(".selfiename");
 
-    //   selfiename.innerHTML = selfies.length;
+      //   selfiename.innerHTML = selfies.length;
     </script>
   </body>
 </html>
