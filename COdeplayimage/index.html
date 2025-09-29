@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Photo Gallery</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-gray-50 text-gray-900">
+    <!-- Mobile Albums -->
+    <div class="mobile-section">
+      <div class="p-[10px] flex justify-between items-center">
+        <button class="text-blue-600 text-[25px]">
+          <i class="fa-solid fa-plus add"></i>
+        </button>
+        <input
+          placeholder="Please enter your name"
+          value=""
+          type="text"
+          class="flex text-center p-[10px] input border border-[2px solid white] rounded-lg"
+        />
+        <i class="fa-solid fa-moon text-[22px] darkmode cursor-pointer"></i>
+        <i
+          style="display: none"
+          class="fa-solid fa-sun lightmode cursor-pointer"
+        ></i>
+      </div>
+      <div class="flex justify-between items-center p-[17px]">
+        <b><h1 class="text-[21px]">My Albums</h1></b>
+        <a href="./selfie.html"><p class="text-[18px] text-blue-600">See all</p></a>
+      </div>
+      <div class="w-full overflow-x-auto p-4 album mobile">
+        <div
+          class="grid grid-flow-col auto-cols-[130px] gap-x-[20px] items-center"
+          id="mobile-albums-row1"
+        >
+          <!-- Mobile albums will be dynamically inserted here -->
+        </div>
+        <div
+          class="grid grid-flow-col auto-cols-[130px] gap-x-[20px] mt-[20px] items-center"
+          id="mobile-albums-row2"
+        >
+          <!-- Mobile albums will be dynamically inserted here -->
+        </div>
+      </div>
+
+      <section class="mobile2 w-full overflow-x-auto">
+        <div class="p-[5px]">
+          <b><h1 class="text-[21px] mt-[10px] p-[15px]">People & places</h1></b>
+        </div>
+        <div
+          class="flex w-full overflow-x-auto space-x-4 p-[20px]"
+          id="people-places"
+        >
+          <!-- People & places will be dynamically inserted here -->
+        </div>
+
+        <div class="mt-[10px]"><hr /></div>
+        <div class="p-[20px]">
+          <b><h1 class="text-[21px]">Media types</h1></b>
+        </div>
+        <div class="grid grid-flow-row gap-y-[20px] p-[20px]" id="media-types">
+          <!-- Media types will be dynamically inserted here -->
+        </div>
+      </section>
+    </div>
+
+    <!-- Desktop Albums -->
+    <div class="desktop-section">
+      <header class="bg-white shadow-sm py-4 px-8">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+          <h1 class="text-2xl font-bold text-indigo-700">My Photo Albums</h1>
+          <div class="flex items-center space-x-4">
+            <button
+              class="bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700 transition flex items-center"
+            >
+              <i class="fas fa-plus mr-2"></i>New Album
+            </button>
+            <div
+              class="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center"
+            >
+              <i class="fas fa-user text-indigo-600"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="w-full px-10 py-8">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-2xl font-bold text-gray-800">All Albums</h2>
+        </div>
+
+        <div
+          class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6"
+          id="desktop-albums"
+        >
+          <!-- Desktop albums will be dynamically inserted here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+      <button class="lightbox-close" onclick="closeLightbox()">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <div class="text-center">
+        <img id="lightbox-img" src="" alt="Album Image" />
+        <p id="lightbox-caption" class="text-white text-lg mt-4"></p>
+        <div class="flex justify-center mt-4 space-x-2">
+          <span
+            id="lightbox-counter"
+            class="text-white bg-black bg-opacity-50 px-3 py-1 rounded-full"
+          ></span>
+        </div>
+      </div>
+      <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
